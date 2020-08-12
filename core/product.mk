@@ -215,6 +215,7 @@ _product_var_list += PRODUCT_OEM_PROPERTIES
 # used for adding properties to default.prop of system partition
 _product_var_list += PRODUCT_SYSTEM_DEFAULT_PROPERTIES
 
+_product_var_list += PRODUCT_ODM_PROPERTY_BLACKLIST
 _product_var_list += PRODUCT_SYSTEM_PROPERTY_BLACKLIST
 _product_var_list += PRODUCT_VENDOR_PROPERTY_BLACKLIST
 _product_var_list += PRODUCT_SYSTEM_SERVER_APPS

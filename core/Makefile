@@ -625,7 +625,7 @@ $(INSTALLED_ODM_BUILD_PROP_TARGET): $(BUILDINFO_COMMON_SH) $(odm_prop_files)
 	        echo "#" >> $@;
 	$(hide) $(foreach line,$(FINAL_ODM_BUILD_PROPERTIES), \
 	    echo "$(line)" >> $@;)
-	$(hide) build/make/tools/post_process_props.py $@
+	$(hide) build/make/tools/post_process_props.py $@ $(PRODUCT_ODM_PROPERTY_BLACKLIST)
 
 # -----------------------------------------------------------------
 # product_services build.prop (unless it's merged into /product)
